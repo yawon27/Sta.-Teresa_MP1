@@ -1,0 +1,538 @@
+*{
+  box-sizing: border-box;
+}
+
+a.footer{
+    color: rgb(255, 255, 255);
+    text-decoration-line: none;
+}
+
+a.footer:hover{
+    text-decoration-line: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color:  rgb(210, 246, 213);
+    margin: 0px;
+    min-height: 100vh;
+}
+
+img.brand{
+    width:clamp(15px,13vw,80px);
+}
+
+header{
+    background-color: rgb(8, 99, 40);
+    width:100%;
+    height:clamp(40px,13vw,70px);
+    font-weight: bold;
+    padding: 10px;
+    position: fixed;
+    z-index: 100;
+
+    display:flex;
+    flex-wrap: wrap;
+}
+
+nav{
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    font-size: clamp(20px,4vw,24px);
+    gap:20px;
+}   
+/*nav-links effect copied from google overview AI*/
+.nav-links {
+  position: relative;
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+  line-height: 1.3;
+}
+
+.nav-links::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-links:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+main{
+    margin:0;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+div.flashy{
+    padding:20px;
+    padding-top:clamp(40px,13vw,80px);
+    background-color: rgb(210, 246, 213);
+}
+
+/*Image slider code done with help of Claude*/
+.slider {
+    display: grid;              
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #222;
+    margin-bottom: 0px;
+}
+
+.slider > * {
+    grid-area: 1 / 1;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+.slider button {
+    align-self: center;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slider button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.slider .prev { justify-self: start; margin-left: 12px; }
+.slider .next { justify-self: end;   margin-right: 12px; }
+
+
+.products-homepage{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.products-homepage > div{
+    width:33.3333%;
+    height:35vw;
+    background-color: rgb(146, 214, 170);
+    padding: 0px;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+}
+
+img.prod{
+    height: auto;
+    width: 90%;
+    max-width: 400px;
+    display: block;
+    margin:auto;
+    background-color: white;
+    border:1vw solid white
+}
+
+.partners{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.partners > div{
+    width: 25%;
+    height: 7vw;
+}
+
+img.partners{
+    width: 60%;
+    display: block;
+    margin:auto;
+}
+
+img.partners:hover{
+    width: 65%;
+}
+
+.homepage-links{
+    font-family:
+        Lucida Handwriting,
+        Brush Script MT,
+        Segoe Script,
+        cursive; font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+.cafeLocations{
+    background-color: rgb(251, 231, 145);
+    margin:0px;
+    padding:7%;
+    padding-top:0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.cafeLocations img{
+    border-radius: 15px;
+    width: 90%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cafeLocations img:hover{
+    border-radius: 15px;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+div.mission{
+    padding: 30px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    background-color: rgb(119, 209, 150);
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mission img{
+    width: 25vw;
+    min-width: 200px;
+    border-radius: 2vw;
+}
+
+div.vision{
+    padding: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: white;
+    text-align: justify;
+}
+
+footer{
+    background-color: rgb(24, 137, 64);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin:0px;
+    height:90px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+footer > div{
+    text-align: center;
+}
+
+img.footLink{
+    width:35px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+img.footLink:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+    
+#loc{
+    scroll-margin-top: 10vw;
+}
+
+
+
+/*About Us ------------------------------------------*/
+div.space{
+    margin:0;
+    height:clamp(40px,13vw,70px);
+    background-color: rgb(255, 255, 255);
+}
+
+div.holder{
+    margin:20px;
+    background-color: rgb(146, 214, 170);
+    display:flex;
+    flex-wrap: wrap;
+}
+
+div.hoverAboutUs{
+    position:relative;
+    width:50%;
+    display:grid;
+}
+
+.hoverAboutUs img{
+    width: 100%;
+    padding:15px;
+    transition: opacity 0.3s;
+}
+
+.hover-text{
+    font-size: 25px;
+    position:absolute;
+    top:50%;
+    left:5vw;
+    transform: translateY(-50%);
+    text-align: center;
+    color:white;
+    opacity:0;
+    transition: opacity 0.3s;
+    padding: 0 10px;
+}
+
+.hoverAboutUs:hover img{
+    opacity: 0.3;
+}
+
+.hoverAboutUs:hover .hover-text{
+    opacity: 1;
+}
+
+.aboutUsText{
+    width:50%;
+    padding:15px;
+    color: rgb(31, 61, 43);
+}
+
+.whoWeAre{
+    padding: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: white;
+    text-align: justify;
+}
+
+/*Products ------------------------------------------*/
+div.loafss{
+    width:100%;
+    overflow-x: auto;
+    background-color: rgb(146, 214, 170);
+    display:flex;
+    flex-wrap: nowrap;
+    padding:20px;
+    scrollbar-width:auto;                                   
+    scrollbar-color: #36b468 rgb(107, 234, 156); 
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    /*Some scroll customization suggested by Claude*/  
+}
+
+div.aLoaf{
+    flex: 0 0 250px;
+}
+
+.aLoaf img{
+    background-color: white;
+    padding:15px;
+    width:90%
+}
+
+div.breadss{
+    width:100%;
+    background-color: rgb(118, 214, 118);
+    display:flex;
+    flex-wrap: wrap;
+}
+
+div.breadss2{
+    width:100%;
+    background-color: rgb(118, 214, 118);
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.aBread{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    width:14%;
+    margin:1.3333%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aBread img{
+    background-color: white;
+    width:10vw;
+    max-width:100px;
+}
+
+
+
+
+.cafeProds{
+    background-color:  rgb(255, 238, 163);
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.prod{
+    width:20%;
+    margin:2.5%;
+    padding:0.5%;
+    padding-bottom: 1%;
+    background-color: rgb(255, 255, 219);
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prod img{
+    width: 90%;
+    object-fit:cover;
+    object-position:center;
+}
+
+/*Gallery ------------------------------------------*/
+div.gallery{
+    width:95%;
+    margin:auto;
+    background-color: rgb(158, 238, 158);
+    display:flex;
+    flex-wrap: wrap;
+}
+
+div.leftGallery{
+    padding:10px;
+    width: 20%;
+    display:flex;
+    flex-wrap:wrap;
+    align-content: flex-start;
+}
+
+.leftt{
+    width:50%;
+    background-color: grey;
+}
+
+.leftt > img{
+    display:block;
+    width:100%;
+    aspect-ratio:1/1;
+    opacity: .4;
+    object-position: center;
+    object-fit:cover;
+    background-color: white;
+    transition: opacity .5s;
+    cursor:pointer;
+    border: solid 2px darkgreen;
+}
+
+.leftt > img:hover{
+    transition: opacity .5s;
+    opacity: 1;
+}
+
+div.rightGallery{
+    width:80%;
+    contain:size;
+}
+
+.rightGallery > img{
+    border: 3px solid darkgreen;
+    border-left: 1px solid darkgreen;
+    width:100%;
+    display:block;
+    height:100%;
+    width:100%;
+    object-position: center;
+    object-fit:cover;
+}
+
+img.selected{
+    opacity: 0.8;
+}
+
+div.references{
+    color:rgb(27, 104, 27);
+    font-size: 15px;
+    display:none;
+}
+
+/*Contact Us------------------*/
+div.contacts{
+    width:100%;
+    background-color:rgb(210, 246, 213);
+    line-height: 30px;
+    padding:15px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+div.biggerText{
+    padding: 15px;
+    font-size:18px;
+}   
+
+/*Ratings------------------*/
+
+div.ratingsBG{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(210, 246, 213);
+    font-size: 18px;
+    color: rgb(4, 73, 8);
+    
+    gap:50px;
+    padding:15px;
+    justify-content: center; /*horizontal*/
+}
+
+div.ratingBox{
+    width: 400px;
+    height: 450px;
+    background-color:  rgb(182, 255, 182);
+    margin-top: 40px;
+}
+
+.ratingBox img{
+    width:70%;
+}
+
+div.ratingBoxTop{
+    width: 400px;
+    height: 70px;
+    background-color:  rgb(100, 202, 100);
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.reviewBox{
+    width:95%;
+    margin:2.5%;
+    text-align:center;
+    background-color: rgb(223, 254, 223);;
+}

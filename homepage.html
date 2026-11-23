@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<!--
+Target user
+- buyers, interested with food
+- delivery option?
+- let them know what the business sells, where it can be found, quality assurance
+- about the business, contact info, reviews
+
+Clarity
+Familiarity 
+User control - to go back to home, or wherever
+Visual hierarchy - which stands out
+Flexibility - option for simplicity, also complexity
+Accessibility 
+
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valley Bread</title>
+    <link href="main.css" rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-4.0.0.min.js"
+        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>   
+
+</head>
+
+<body>
+    <header> 
+        <div style="width: 15vw; min-width: 80px; max-width:90px">
+            <img src="/logos/vb logo.png" class="brand">
+        </div>   
+       
+        <nav>
+            <a style="color: rgb(157, 255, 193);">Home</a>
+            <a href="Products.html" class="nav-links">Products</a>
+            <a href="AboutUs.html" class="nav-links">About Us</a>
+            <a href="ContactUs.html" class="nav-links">Contact Us</a>
+        </nav> 
+    </header>
+
+    <main>
+        <div class="flashy">
+            <div class="slider" id="slider">
+                <img src="/Others/vbCover.png" class="active">
+                <img src="/Others/bakery.jpg">
+                <img src="/Products/ubeCake.jpg">
+                <img src="/Products/sandwich.jpg">
+
+                <button class="prev">&#10094</button>
+                <button class="next">&#10095</button>
+            </div>
+        </div>
+
+        <div class="products-homepage"> 
+            <div style="width: 100%;height: 50px; padding: 0px;">
+                <h6 style="text-align: center;">
+                <a href="products.html" class="homepage-links nav-links" style="color: white; text-decoration-line: none;"> 
+                    Our Products</a> </h6><br>
+            </div>
+            <div><img src="/Products/loaf.png" class="prod"></div>
+            <div><img src="/Products/pandesal.jpg" class="prod"></div>
+            <div><img src="/Products/brioche.jpg" class="prod"></div>
+            <div><img src="/Products/sandwich.jpg" class="prod"></div>
+            <div><img src="/Products/matcha2.jpg" class="prod"></div>
+            <div><img src="/Products/breadProds.png" class="prod"></div>     
+        </div>
+
+
+        <div class="partners">
+            <div style="width: 100%;height: 50px; padding: 0px; text-align: center;margin: 10px;">
+                <a class="homepage-links">
+                    Our Partners</a>
+            </div>
+            <div><img src="/logos/savemore.png" class="partners"></div>
+            <div><img src="/logos/puregold.png" class="partners"></div>
+            <div><img src="/logos/robinsons.png" class="partners"></div>
+            <div><img src="/logos/tiongsan.png" class="partners"></div>
+            
+        </div>
+
+        <div style="width: 100%;height: 100px; padding: 0px; padding-top: 10px;text-align: center;margin: 0px; background-color:rgb(251, 231, 145);">
+                <img src="/logos/vbCafe.png" style="width:150px">
+        </div>
+
+        <div class="cafeLocations" id="loc">
+            <div style="width:30%">
+                <a href="https://www.google.com/maps?udm&fvr=1&pvq=Cg0vZy8xMXRnZzFkeTczIhcKEXZhbGxleSBicmVhZCBjYWZlEAIYA4kByOPmYFV4zpQ&lqi=ChF2YWxsZXkgYnJlYWQgY2FmZUjj6dngubmAgAhaKRAAEAEQAhgAGAEYAiIRdmFsbGV5IGJyZWFkIGNhZmUqCAgCEAAQARACkgELY29mZmVlX3Nob3CaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTjRkRTl5ZDFOM0VBRfoBBAgAEEA&vet=10CAAQoqAOahcKEwiA0aSh5ZyYAxUAAAAAHQAAAAAQCA..i&cs=1&um=1&ie=UTF-8&fb=1&gl=ph&sa=X&ftid=0x3391a19145822903:0x94ce785560e6e3c8"
+                target="_blank">
+                    <img src="/Others/vbCafeMagsaysay.webp" width="200px" title="Magsaysay Ave. Cafe">
+                </a>
+            </div>
+            <div style="width:30%">
+                <a href="https://www.google.com/maps?udm&fvr=1&pvq=Cg0vZy8xMXQxN3RfdDgzIhcKEXZhbGxleSBicmVhZCBjYWZlEAIYA4kBg0W6C1PMrzY&lqi=ChF2YWxsZXkgYnJlYWQgY2FmZUiDyv_8hLmAgAhaKRAAEAEQAhgAGAEYAiIRdmFsbGV5IGJyZWFkIGNhZmUqCAgCEAAQARACkgELY29mZmVlX3Nob3CaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTXhNell6T1ZCbkVBRfoBBAgAEEU&vet=10CAAQoqAOahcKEwiA0aSh5ZyYAxUAAAAAHQAAAAAQSQ..i&cs=1&um=1&ie=UTF-8&fb=1&gl=ph&sa=X&ftid=0x3391a3b9e26f0d9d:0x36afcc530bba4583"
+                target="_blank">
+                    <img src="/Others/vbCafeTrinidad.webp" width="200px" title="La Trinidad Cafe">
+                </a>
+            </div>
+            <div style="width:40%">
+                CH8W+R74, Magsaysay Ave, Baguio, Benguet <br>
+                7:00am - 8:00pm <br>
+                (074) 424 2769 <br>
+                <br>
+                Km.4 Pico Rd, Balili, La Trinidad, Benguet <br>
+                7:00am - 8:00pm <br>
+                0968 851 9688 <br>
+
+            </div>
+
+        </div>
+
+        <div class="mission">
+            <div style="width:100%"><h6 class="homepage-links" style="text-align: center; margin:0px;margin-bottom: 10px;">
+                 Our Mission</h6></div> 
+            <div style="width:30%; min-width: 200px;">
+                <img src="/Others/gallery1.png">
+            </div>
+            <div style="width: 70%;">
+                Our mission to bake the perfect bread every day emphasizes our 
+                commitment to maintain and improve the quality of our products
+                from the dough to the packaging and this is enculturated among 
+                our employees from the administration team to the production floor.
+                <br><br>
+                We want people to remember Valley Bread, Inc. as a company that 
+                can provide great quality products that everyone can enjoy as we
+                aspire to be the leading choice of households in Northern Luzon. <br>
+                <br>
+                <a href="Gallery.html" class="nav-links" style="color:  rgb(0, 163, 54);">Check our gallery</a>
+            </div>
+            
+        </div>
+
+        
+        <div class="vision">
+            <h6 class="homepage-links" style="text-align: center; margin:0px;margin-bottom: 10px;"> 
+                Our Vision</h6>
+            We pride ourselves on offering a variety of breads and snack products,
+            with a particular emphasis on dedication to the community. To
+            be the leader in producing varieties of bread that cater to all
+            walks of life, from the health conscious to those willing to try
+            something new. And because our goal is not just to sell food, we 
+            want our customers to understand why they should care about where 
+            and how it is grown, processed and distributed.
+            <br>
+            <div style="text-align: right; width:100%">
+                <a href="AboutUs.html" class="nav-links" style="color:  rgb(23, 164, 73);">More about us</a>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <a href="Ratings.html"><h6 style="text-align: center; margin:10px;font-size: 15px; color: darkgreen;"> 
+                 Check the reviews and ratings </h6></a>
+        </div>
+
+
+        <footer>
+            <div style="width:15%;">
+                <a href="AboutUs.html" class="footer">About Us</a>
+            </div>
+            <div style="width:15%;">
+                <a href="ContactUs.html" class="footer">Contact Us</a>
+            </div>
+            <div style="width:15%;">
+                <a href="#loc" class="footer">Cafe Locations</a>
+            </div>
+            <div style="width:15%;">
+                <a href="Gallery.html" class="footer">Media Gallery (and references)</a>
+            </div>
+
+            <div style="width:15%">
+                <a href="Ratings.html" class="footer">Our Ratings</a>
+            </div>
+            
+            <div style="width: 25%; text-align: right;">
+                <a href="https://www.instagram.com/valleybreadcafe/">
+                    <img src="/logos/instaLogo.png" class="footLink" title="Instagram Page">
+                </a> 
+                <a href="https://www.facebook.com/valleybreadofficialpage/">
+                    <img src="/logos/fbLogo.png" class="footLink" title="Facebook Page">
+                </a> 
+            </div>
+            <div style="width:100%">
+                <h4 style="text-align: center; margin:0px; color: white;">
+                    © Copyright 2026 Valley Bread Inc. All Rights Reserved
+                </h4> 
+            </div>
+            
+            
+        </footer>
+
+    </main>
+
+</body>
+
+
+</html>
+
